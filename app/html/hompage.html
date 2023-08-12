@@ -1,0 +1,70 @@
+<main className="bg-gray-100 min-h-screen w-screen">
+	<main className="bg-white max-w-screen-2xl m-auto">
+		{/* NAVBAR */}
+		<nav className="flex justify-between p-2">
+			<a href="" className="font-bold text-2xl"> OpenTable </a>
+			<div className="flex gap-3">
+				<button
+					className="bg-green-300 text-white p-2 px-4 border rounded mr-2 cursor-pointer"
+				>
+					Sign In
+				</button>
+				<button className="p-2 px-4 border rounded mr-2 cursor-pointer">
+					Sign In
+				</button>
+			</div>
+		</nav>
+		{/* NAVBAR */}
+		<main>
+			{/* HEADER */}
+			<div className="h-64 bg-gradient-to-r from-[#3ded97] to-[#c8faeb] p-2">
+				<div className=" text-center mt-2">
+					<h1 className="text-4xl font-bold mb-2 pt-2">
+						Find Your Table For Any Occasions.
+					</h1>
+
+					{/* SEARCHBAR */}
+					<div className="flex justify-center py-3 m-auto text-left text-lg">
+						<input
+							type="text"
+							className="rounded  p-2 w-[450px] outline-none mr-3"
+							placeholder="State, city or town"
+						/>
+						<button className="bg-teal-400 px-4 py-2 text-white rounded">
+							Let's Go
+						</button>
+					</div>
+					{/* SEARCHBAR */}
+				</div>
+			</div>
+			{/* HEADER */} {/* CARDS */}
+			<div className="mt-10 px-36 py-3 flex flex-nowrap">
+				{/* CARD */}
+				<div
+					className="w-64 h-72 overflow-hidden rounded m-4 border cursor-pointer  "
+				>
+					<img
+						src="https://i.pinimg.com/564x/cb/d6/51/cbd65101fd5f47caf560379b1353c486.jpg"
+						alt=""
+						className="w-64 h-36 object-cover"
+					/>
+					<div className="p-1 ml-2">
+						<h3 className="font-bold text-2xl mb-2">Grillstorm Plus</h3>
+						<div className="flex items-start">
+							<div className="flex mb-2">*****</div>
+							<p className="ml-2">69 Reviews</p>
+						</div>
+						<div className=" flex mb-2 font-light text-gray-400 text-base">
+							<p className="font-normal ">Barbecue</p>
+							<p className="ml-2 font-normal ">$$$$</p>
+							<p className="ml-2 font-normal">Ottawa</p>
+						</div>
+						<p className="mt-3 font-bold text-reg">Book 3 times today</p>
+					</div>
+				</div>
+				{/* CARD */}
+			</div>
+			{/* CARDS */}
+		</main>
+	</main>
+</main>

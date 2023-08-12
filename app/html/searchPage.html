@@ -1,0 +1,102 @@
+<main className="bg-gray-100 min-h-screen w-screen">
+	<main className="bg-white max-w-screen-2xl m-auto">
+		{/* NAVBAR */}
+		<nav className="flex justify-between p-2">
+			<a href="" className="font-bold text-2xl"> {" "} OpenTable{" "} </a>
+			<div className="flex gap-3">
+				<button
+					className="bg-green-300 text-white p-2 px-4 border rounded mr-2 cursor-pointer"
+				>
+					Sign In
+				</button>
+				<button className="p-2 px-4 border rounded mr-2 cursor-pointer">
+					Sign In
+				</button>
+			</div>
+		</nav>
+		{/* HEADER */}
+		<div className="bg-gradient-to-r from-[#3ded97] to-[#c8faeb] p-2">
+			{/* SEARCHBAR */}
+			<div className="flex justify-center py-3 m-auto text-left text-lg">
+				<input
+					type="text"
+					className="rounded  p-2 w-[450px] outline-none mr-3"
+					placeholder="State, city or town"
+				/>
+				<button className="bg-teal-400 px-4 py-2 text-white rounded">
+					Let's Go
+				</button>
+			</div>
+			{/* SEARCHBAR */}
+		</div>
+		{/* HEADER */}
+		<div className="flex items-start justify-between w-2/3 py-4 m-auto">
+			{/* SEARCH SIDEBAR */}
+			<div className="w-1/5">
+				<div className="border-b pb-4">
+					<h1 className="text-reg">Region</h1>
+					<p className="font-light text-reg">Toronto</p>
+					<p className="font-light text-reg">Ottawa</p>
+					<p className="font-light text-reg">Montreal</p>
+					<p className="font-light text-reg">Hamilton</p>
+					<p className="font-light text-reg">Kingston</p>
+					<p className="font-light text-reg">Niagara</p>
+				</div>
+				<div className="border-b pb-4 mt-4">
+					<h1 className="text-reg">Cuisine</h1>
+					<p className="font-light text-reg">Mexican</p>
+					<p className="font-light text-reg">Italian</p>
+					<p className="font-light text-reg">Chinese</p>
+					<p className="font-light text-reg">Japanese</p>
+				</div>
+				<div className="mt-3 pb-4">
+					<h1 className="mb-2">Price</h1>
+					<div className="flex">
+						<button className="border w-full text-reg rounded-l p-2 font-light">
+							$
+						</button>
+						<button
+							className="border-t border-r border-b w-full text-reg p-2 font-light"
+						>
+							$$
+						</button>
+						<button
+							className="border-t border-r border-b w-full text-reg p-2 font-light rounded-r"
+						>
+							$$$
+						</button>
+					</div>
+				</div>
+			</div>
+			{/* SEARCH SIDEBAR */}
+			<div className="w-5/6">
+				{/* RESTAURANT CARD */}
+				<div className="flex pb-5 border-b">
+					<img
+						src="https://i.pinimg.com/750x/5b/8e/40/5b8e40d1ce8e32f057416f511dc02132.jpg"
+						alt=""
+						className="w-44 rounded"
+					/>
+					<div className="pl-5">
+						<h2 className="text-3xl">Aiana Restaurant Collective</h2>
+						<div className="flex item-start">
+							<div className="flex mb-2">*****</div>
+							<p className="ml-2 text-sm">Awesome</p>
+						</div>
+						<div className="mb-9">
+							<div className="flex text-reg font-light">
+								<p className="mr-4">$$$</p>
+								<p className="mr-4">Japan</p>
+								<p className="mr-4">Osaka</p>
+							</div>
+						</div>
+						<div className="text-red-500">
+							<a href="">View More Information</a>
+						</div>
+					</div>
+				</div>
+				{/* RESTAURANT CARD */}
+			</div>
+		</div>
+	</main>
+</main>

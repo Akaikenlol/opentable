@@ -1,0 +1,170 @@
+<main className="bg-gray-100 min-h-screen w-screen">
+	<main className="bg-white max-w-screen-2xl m-auto">
+		{/* NAVBAR */}
+		<nav className="flex justify-between p-2">
+			<a href="" className="font-bold text-2xl"> {" "} OpenTable{" "} </a>
+			<div className="flex gap-3">
+				<button
+					className="bg-green-300 text-white p-2 px-4 border rounded mr-2 cursor-pointer"
+				>
+					Sign In
+				</button>
+				<button className="p-2 px-4 border rounded mr-2 cursor-pointer">
+					Sign In
+				</button>
+			</div>
+		</nav>
+		{/* NAVBAR */} {/* HEADER */}
+		<div className="h-96 overflow-hidden">
+			<div
+				className="flex justify-center items-center h-full bg-gradient-to-r from-[#3ded97] to-[#c8faeb]"
+			>
+				<h1 className="text-2xl font-bold capitalize text-center">
+					Milestone Grill (Toronto)
+				</h1>
+			</div>
+		</div>
+		{/* HEADER */} {/* DESCRIPTION PORTION */}
+		<div className="flex m-auto justify-between items-start w-2/3 0 -mt-10">
+			<div className="bg-white w-[70%] rounded shadow p-3">
+				{/* RESAURANT NAVBAR */}
+				<nav className="flex text-reg pb-2 border-b">
+					<a href="" className="mr-4"> Overview </a>
+					<a href="" className="mr-4"> Photo </a>
+					<a href="" className="mr-4"> Menu </a>
+					<a href="" className="mr-4"> Preview </a>
+				</nav>
+				{/* RESAURANT NAVBAR */} {/* TITLE */}
+				<div className="mt-4 border-b pb-6">
+					<h1 className="text-6xl font-bold ">Milestone Grill</h1>
+				</div>
+				{/* TITLE */} {/* RATING */}
+				<div className="flex items-end">
+					<div className="ratings mt-2 flex items-center">
+						<p>*****</p>
+						<p className=" text-reg ml-3">4.9</p>
+					</div>
+					<div>
+						<p className="text-reg ml-4">4900 Review</p>
+					</div>
+				</div>
+				{/* RATING */} {/* DESCRIPTION */}
+				<div className="mt-4">
+					<p className="text-lg font-light">
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum
+						laborum nesciunt iure, quisquam saepe est.
+					</p>
+				</div>
+				{/* DESCRIPTION */} {/* IMAGES */}
+				<div>
+					<h1 className="font-bold text-3xl mt-10 mb-7 border-b pb-5">
+						5 Photos
+					</h1>
+					<div className="flex flex-wrap">
+						{" "}
+						<img
+							src="https://i.pinimg.com/564x/a6/62/26/a66226fb9036e2b761e7209ecd391d64.jpg"
+							alt=""
+							className="w-56 h-44 mr-1 mb-1 object-cover"
+						/>
+						<img
+							src="https://i.pinimg.com/564x/e6/57/e7/e657e783246186b4f92b82d64d05d9b7.jpg"
+							alt=""
+							className="w-56 h-44 mr-1 mb-1 object-cover"
+						/>
+						<img
+							src="https://i.pinimg.com/736x/ad/fe/51/adfe511cfe1bbf40f630223eae8d5d94.jpg"
+							alt=""
+							className="w-56 h-44 mr-1 mb-1 object-cover"
+						/>
+						<img
+							src="https://i.pinimg.com/564x/e6/2e/53/e62e53a1b142ab26ffaa7b7b7d908860.jpg"
+							alt=""
+							className="w-56 h-44 mr-1 mb-1 object-cover"
+						/>
+						<img
+							src="https://i.pinimg.com/564x/34/06/ff/3406ff3e07290550c3218077f0172396.jpg"
+							alt=""
+							className="w-56 h-44 mr-1 mb-1 object-cover"
+						/>{" "}
+					</div>
+				</div>
+				{/* IMAGES */} {/* REVIEW */}
+				<div className="">
+					<h1 className="font-bold text-3xl mt-10 mb-7 border-b pb-5">
+						What 100 people are saying
+					</h1>
+				</div>
+				{/* REVIEW CARD */}
+				<div className="border-b pb-7 mb-7">
+					<div className="flex">
+						<div className="w-1/6 flex flex-col items-center">
+							<div
+								className="rounded-full bg-teal-200 w-16 h-16 flex items-center justify-center"
+							>
+								<h2 className="text-white text-2xl">JD</h2>
+							</div>
+							<p className="mt-5 text-center">John Doe</p>
+						</div>
+						<div className="ml-10 w-5/6">
+							<div className="flex items-center">
+								<div className="flex mr-5">*****</div>
+							</div>
+							<div className="mt-5">
+								<p className="text-lg font-light">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+									cumque iste voluptas exercitationem adipisci, inventore
+									aliquid deleniti saepe impedit reiciendis.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				{/* REVIEW CARD */} {/* REVIEW */}
+			</div>
+			{/* RESERVATION CARD PORTION */}
+			<div className="w-[27%] relative text-reg">
+				<div className="fixed w-[15%] rounded bg-white p-3 shadow">
+					<div className="text-center border-b pb-2 font-bold">
+						<h4 className="mr-7 text-lg">Make a Reservation</h4>
+					</div>
+					<div className="my-4 flex flex-col">
+						<label htmlFor="">Party Size</label>
+						<select
+							name=""
+							className="py-3 border-b font-light outline-none"
+							id=""
+						>
+							<option value="">1 Person</option>
+							<option value="">2 Person</option>
+						</select>
+					</div>
+					<div className="flex justify-between">
+						<div className="flex flex-col w-[48%]">
+							<label htmlFor="" className=""> Date </label>
+							<input type="text" className="py-3 font-light border-b w-28" />
+						</div>
+						<div className="flex flex-col w-[48%]">
+							<label htmlFor="" className=""> Time </label>
+							<select
+								name=""
+								className="py-3 border-b font-light outline-none"
+								id=""
+							>
+								<option value="">7:30 AM</option>
+								<option value="">9:30 AM</option>
+							</select>
+						</div>
+					</div>
+					<div className="mt-5">
+						<button className="bg-teal-200 w-full rounded px-4 h-16 font-bold">
+							Find a time
+						</button>
+					</div>
+				</div>
+			</div>
+			{/* RESERVATION CARD PORTION */}
+		</div>
+		{/* DESCRIPTION PORTION */}
+	</main>
+</main>
