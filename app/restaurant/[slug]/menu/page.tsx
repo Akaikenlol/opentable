@@ -11,7 +11,7 @@ const fetchRestaurantMenu = async (slug: string) => {
 		},
 
 		select: {
-			item: true,
+			items: true,
 		},
 	});
 
@@ -19,7 +19,7 @@ const fetchRestaurantMenu = async (slug: string) => {
 		throw new Error();
 	}
 
-	return restaurant.item;
+	return restaurant.items;
 };
 
 export const metadata = {
