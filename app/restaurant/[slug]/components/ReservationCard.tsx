@@ -22,7 +22,7 @@ export default function ReservationCard({
 	const [time, setTime] = useState(openTime);
 	const [partySize, setPartySize] = useState("2");
 	const [day, setDay] = useState(new Date().toISOString().split("T")[0]);
-	console.log({ data });
+	console.log( data );
 	const handleChangeDate = (date: Date | null) => {
 		if (date) {
 			setDay(date.toISOString().split("T")[0]);
@@ -73,8 +73,10 @@ export default function ReservationCard({
 					value={partySize}
 					onChange={(e) => setPartySize(e.target.value)}
 				>
-					{partySizes.map((size) => (
-						<option value={size.value}>{size.label}</option>
+					{partySizes.map((size, i) => (
+						<option value={size.value} key={i}>
+							{size.label}
+						</option>
 					))}
 				</select>
 			</div>
@@ -102,8 +104,10 @@ export default function ReservationCard({
 						value={time}
 						onChange={(e) => setTime(e.target.value)}
 					>
-						{filterTimeByRestaurantOpenWindow().map((time) => (
-							<option value={time.time}>{time.displayTime}</option>
+						{filterTimeByRestaurantOpenWindow().map((time, i) => (
+							<option value={time.time} key={i}>
+								{time.displayTime}
+							</option>
 						))}
 					</select>
 				</div>
@@ -121,21 +125,33 @@ export default function ReservationCard({
 				<div className="mt-4">
 					<p className="text-reg">Select a Time</p>
 					<div className="flex flex-wrap mt-2">
-						{data.map((time) => {
+						{data.map((time, i) => {
+						// 	<Link
+						// 	href={`/reserve/${slug}?date=${day}T${time.time}&partySize=${partySize}`}
+						// 	className="bg-teal-200 cursor-pointer p-2 w-24 text-center text-white mb-3 rounded mr-3"
+						// 	key={i}
+						// >
+						// 	<p className="text-sm font-bold">
+						// 		{convertToDisplayTime(time.time as Time)}
+						// 	</p>
+						// </Link>
 							return time.available ? (
 								<Link
 									href={`/reserve/${slug}?date=${day}T${time.time}&partySize=${partySize}`}
 									className="bg-teal-200 cursor-pointer p-2 w-24 text-center text-white mb-3 rounded mr-3"
-									key={time.time}
+									key={i}
 								>
-									<p className="text-sm font-bold" key={time.time}>
+									<p className="text-sm font-bold">
 										{convertToDisplayTime(time.time as Time)}
 									</p>
 								</Link>
 							) : (
-								<p className="bg-gray-300 p-2 w-24 mb-3 rounded mr-3"></p>
+								<p
+									className="bg-gray-300 p-2 w-24 mb-3 rounded mr-3 text-center"
+									key={i}
+								>{convertToDisplayTime(time.time as Time)}</p>
 							);
-						})}
+})}
 					</div>
 				</div>
 			) : null}
