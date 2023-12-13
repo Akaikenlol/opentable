@@ -7,9 +7,9 @@ Welcome to the OpenTable project! 🍽️ This repository is home to a user-frie
 The OpenTable project is designed to provide a seamless and enjoyable dining reservation experience. Leveraging the reliability of Next.js, the type-safety of TypeScript, and the robustness of MongoDB with Mongoose, this project is tailored for both developers and users who appreciate clean code and delicious meals.
 
 ## 2. Features
-User-Friendly Interface: Navigate the application with ease and make reservations effortlessly.
-Type-Safe Development: TypeScript ensures a robust and reliable codebase, catching errors before they reach production.
-MongoDB and Mongoose: Enjoy the benefits of a NoSQL database with the convenience of Mongoose for data modeling and interaction.
+- User-Friendly Interface: Navigate the application with ease and make reservations effortlessly.
+- Type-Safe Development: TypeScript ensures a robust and reliable codebase, catching errors before they reach production.
+- MongoDB and Mongoose: Enjoy the benefits of a NoSQL database with the convenience of Mongoose for data modeling and interaction.
 
 ## 3. Getting Started
 **Prerequisites**
